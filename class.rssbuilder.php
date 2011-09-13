@@ -2,10 +2,10 @@
 //-------------------------------------------------------------------------------
 //  RSS Builder Class
 //-------------------------------------------------------------------------------
-//  Author		Mert Yazicioglu
+//  Author      Mert Yazicioglu
 //  Author URI  http://www.mertyazicioglu.com
-//  Date		13th September 2011
-//  License		GNU GPLv2
+//  Date        13th September 2011
+//  License     GNU GPLv2
 //-------------------------------------------------------------------------------
 //  Builds RSS Feed with given values.
 //-------------------------------------------------------------------------------
