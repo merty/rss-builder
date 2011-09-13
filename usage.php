@@ -1,13 +1,13 @@
 <?php
 //-------------------------------------------------------------------------------
-//	Sample Usage of the RSSBuilder Class
+//  Sample Usage of the RSSBuilder Class
 //-------------------------------------------------------------------------------
-//	Author		Mert Yazicioglu
-//	Author URI  http://www.mertyazicioglu.com
-//	Date		13th September 2011
-//	License		GNU GPLv2
+//  Author		Mert Yazicioglu
+//  Author URI  http://www.mertyazicioglu.com
+//  Date		13th September 2011
+//  License		GNU GPLv2
 //-------------------------------------------------------------------------------
-//	Creates an exact replica of cyber.law.harvard.edu/rss/examples/rss2sample.xml
+//  Creates an exact replica of cyber.law.harvard.edu/rss/examples/rss2sample.xml
 //-------------------------------------------------------------------------------
 
 require_once( 'class.rssbuilder.php' );
