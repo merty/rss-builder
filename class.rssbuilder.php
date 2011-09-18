@@ -16,6 +16,12 @@ class RSSBuilder extends DOMDocument {
 	private $currentItem;
 	private $rss;
 
+	/**
+	 * Class constructor.
+	 *
+	 * @param  void
+	 * @return void
+	 */
 	public function __construct() {
 
 		parent::__construct();
@@ -28,6 +34,12 @@ class RSSBuilder extends DOMDocument {
 
 	}
 
+	/**
+	 * Adds a new channel to the feed.
+	 *
+	 * @param  void
+	 * @return void
+	 */
 	public function addChannel() {
 
 		$channelElement = $this->createElement( 'channel' );
@@ -35,6 +47,14 @@ class RSSBuilder extends DOMDocument {
 
 	}
 
+	/**
+	 * Adds a new element to the channel.
+	 *
+	 * @param  string $element Name of the channel element.
+	 * @param  string $value   Value for the given element.
+	 * @param  array  $attr    Two-dim array of attributes and their values for the element. (Optional)
+	 * @return void
+	 */
 	public function addChannelElement( $element, $value, $attr = array() ) {
 
 		$element = $this->createElement( $element, $value );
@@ -46,6 +66,13 @@ class RSSBuilder extends DOMDocument {
 
 	}
 
+	/**
+	 * Adds a new element with sub elements to the channel.
+	 *
+	 * @param  string $element Name of the channel element.
+	 * @param  array  Two-dim array of sub elements and their values.
+	 * @return void
+	 */
 	public function addChannelElementWithSub( $element, $sub ) {
 
 		$element = $this->createElement( $element );
@@ -58,6 +85,12 @@ class RSSBuilder extends DOMDocument {
 		$this->channel->appendChild( $element );
 	}
 
+	/**
+	 * Adds a new channel item.
+	 *
+	 * @param  void
+	 * @return void
+	 */
 	public function addItem() {
 
 		$item = $this->createElement( 'item' );
@@ -65,6 +98,14 @@ class RSSBuilder extends DOMDocument {
 
 	}
 
+	/**
+	 * Adds a new sub element to the recently added channel item.
+	 *
+	 * @param  string $element Name of the sub item element.
+	 * @param  string $value   Value for the given element.
+	 * @param  array  $attr    Two-dim array of attributes and their values for the element. (Optional)
+	 * @return void
+	 */
 	public function addItemElement( $element, $value, $attr = array() ) {
 
 		$element = $this->createElement( $element, $value );
@@ -75,6 +116,13 @@ class RSSBuilder extends DOMDocument {
 		$this->currentItem->appendChild( $element );
 	}
 
+
+	/**
+	 * Prints the XML document created.
+	 *
+	 * @param  void
+	 * @return string The created XML document.
+	 */
 	public function __toString() {
 
 		return $this->saveXML();
