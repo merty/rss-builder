@@ -116,7 +116,6 @@ class RSSBuilder extends DOMDocument {
 		$this->currentItem->appendChild( $element );
 	}
 
-
 	/**
 	 * Prints the XML document created.
 	 *
