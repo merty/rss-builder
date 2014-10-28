@@ -53,5 +53,3 @@ $RB->addItemElement( 'pubDate', 'Tue, 20 May 2003 08:56:02 GMT' );
 $RB->addItemElement( 'guid', 'http://liftoff.msfc.nasa.gov/2003/05/20.html#item570' );
 
 echo $RB;
-
-?>
