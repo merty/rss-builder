@@ -128,5 +128,3 @@ class RSSBuilder extends DOMDocument {
 
 	}
 }
-
-?>
